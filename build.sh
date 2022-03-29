@@ -8,3 +8,6 @@ BB_USERNAME=${BB_USERNAME:-${USER}}
 echo "USER_ID=${USER_ID}" > .env
 echo "GROUP_ID=${GROUP_ID}" >> .env
 echo "USERNAME=$(whoami)" >> .env
+
+docker-compose build
+docker-compose run build
